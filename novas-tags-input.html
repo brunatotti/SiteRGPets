@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS files  -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--  JS files -->
+        <script src="vendors/js/jquery-3.2.1.min.js"></script>
+        <script src="vendors/js/bootstrap.min.js"></script>
+        <script src="vendors/js/jsts.min.js"></script>
+        <title>RG para PETS</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-12">
+                <section>
+                        <h3>RG PARA PETS</h3>
+                        <h5>Preencha o formulário a baixo:</h5>
+                    </section>
+                <div class="col-6">
+                    <form method="post" action="processa.php">
+                        <div class="form-group">
+                            <label for="nome">Nome do Pet:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Ex: Meg Silva" required="" autofocus="">
+                        </div>
+                        <div class="form-group">
+                            <label for="fotoPet">Envie uma Foto do Pet:</label>
+                            <input type="file" id="fotoPet">
+                        </div>
+                        <div class="form-group">
+                            <label for="tutor">Nome dos Tutores:</label>
+                            <p class="help-block">Somente nome e sobrenome.</p>
+                            <input type="text" class="form-control" id="tutor" placeholder="Ex: João da Silva e Maria de Oliveira" required="" autofocus="">    
+                        </div>
+                        <div class="form-group">
+                            <label for="naturalidade">Naturalidade:</label>
+                            <p class="help-block">Cidade onde nasceu</p>
+                            <input type="text" class="form-control" id="naturalidade" placeholder="Ex: São José dos Campos - SP" required="" autofocus="">
+                        </div>
+                        <div class="form-group">
+                            <label for="nascimento">Data de Nascimento do Pet:</label>
+                            <input type="date" class="form-control" id="data">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6">
+                    <form method="post" action="processa.php">
+                        <div class="form-group">
+                            <label for="pelagem">Pelagem:</label>
+                            <input type="text" class="form-control" id="pelagem" placeholder="Ex: Preto e Dourado" required="" autofocus="">
+                        </div>
+                        <div class="form-group">
+                            <label for="raca">Raça:</label>
+                            <input type="text" class="form-control" id="raca" placeholder="Insira a Raça do Pet" required="" autofocus="">
+                        </div>
+                        <div class="form-group">
+                            <label for="raca">Sexo:</label>
+                            <select class="form-control">
+                                <option>Macho</option>
+                                <option>Fêmea</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <input type="submit" class="btn btn-default" name="enviar">
+            </div>
+        </div>
+    </body>
+</html>
